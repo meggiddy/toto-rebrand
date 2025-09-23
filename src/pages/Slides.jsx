@@ -6,7 +6,8 @@ export default function Slides() {
     "../assets/carousel/*.{png,jpg,jpeg,webp}",
     {
       eager: true,
-      as: "url",
+      query: "?url",
+      import: "default",
     }
   );
   const images = Object.values(imported).map((src, i) => ({

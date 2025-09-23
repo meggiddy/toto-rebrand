@@ -11,7 +11,8 @@ const Packages = () => {
     "../assets/painting/*.{png,jpg,jpeg,webp}",
     {
       eager: true,
-      as: "url",
+      query: "?url",
+      import: "default",
     }
   );
   const images = Object.values(imported).map((src, i) => ({
@@ -23,7 +24,8 @@ const Packages = () => {
     "../assets/festival/*.{png,jpg,jpeg,webp}",
     {
       eager: true,
-      as: "url",
+      query: "?url",
+      import: "default",
     }
   );
   const imagesFest = Object.values(importedFest).map((src, i) => ({
@@ -35,7 +37,8 @@ const Packages = () => {
     "../assets/private/*.{png,jpg,jpeg,webp}",
     {
       eager: true,
-      as: "url",
+      query: "?url",
+      import: "default",
     }
   );
   const imagesPriv = Object.values(importedPriv).map((src, i) => ({

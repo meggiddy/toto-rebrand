@@ -11,7 +11,8 @@ import Gallery from "./pages/Gallery.jsx";
 import WhatsAppWidget from "./components/Whatsapp.jsx";
 import Services from "./pages/Services.jsx";
 
-const phone = import.meta.env.VITE_WHATSAPP_NUMBER;
+const phone = import.meta.env.VITE_WA_NUMBER;
+const message = import.meta.env.VITE_WA_MESSAGE;
 
 createRoot(document.getElementById("root")).render(
   <BrowserRouter>
@@ -23,10 +24,7 @@ createRoot(document.getElementById("root")).render(
       <Route path="/services" element={<Services />} />
     </Routes>
     {/* WhatsApp Widget */}
-    <WhatsAppWidget
-      number={phone}
-      message="Hello! I'm interested in your products!"
-    />
+    <WhatsAppWidget number={phone} message={message} />
     <Footer />
   </BrowserRouter>
 );

@@ -6,7 +6,7 @@ export default function Navbar() {
   const [open, setOpen] = useState(false);
 
   return (
-    <header className="fixed inset-x-0 top-0 z-50 bg-linear-bl from-cyan-300/60 to-blue-500/60 backdrop-blur">
+    <header className="fixed inset-x-0 top-0 z-50 bg-linear-bl from-cyan-300 to-blue-500 backdrop-blur">
       <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         {/* Brand */}
         <Link to="/" className="flex items-center gap-2">
@@ -15,7 +15,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden items-center gap-8 text-blue-300 lg:flex">
+        <div className="hidden items-center gap-8 text-blue-500 lg:flex">
           <NavLink to="/gallery" className="hover:text-cyan-200">
             Gallery
           </NavLink>
@@ -34,7 +34,7 @@ export default function Navbar() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label="Toggle menu"
-          className="inline-flex items-center rounded-md p-2 text-white lg:hidden"
+          className="inline-flex items-center rounded-md p-2 text-cyan-300 lg:hidden"
         >
           {/* hamburger / X */}
           <svg
@@ -67,7 +67,7 @@ export default function Navbar() {
         id="mobile-menu"
         className={`${
           open ? "block" : "hidden"
-        } border-t border-white/10 text-white lg:hidden bg-linear-bl from-cyan-300/60 to-blue-500/60 backdrop-blur`}
+        } border-t border-white/10 text-cyan-300 lg:hidden bg-linear-bl from-cyan-300 to-blue-500 backdrop-blur`}
       >
         <div className="space-y-1 px-4 py-3">
           <NavLink

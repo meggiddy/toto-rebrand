@@ -1,4 +1,8 @@
 import React from "react";
+import WhatsAppWidget from "./Whatsapp";
+
+const phone = import.meta.env.VITE_WA_NUMBER;
+const message = import.meta.env.VITE_WA_MESSAGE;
 
 const Footer = () => {
   return (
@@ -79,7 +83,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
+            <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-2 lg:text-left">
               <div>
                 <strong className="font-medium text-gray-900"> About </strong>
 
@@ -91,36 +95,6 @@ const Footer = () => {
                     >
                       {" "}
                       About{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-white-700/75"
-                      href="#"
-                    >
-                      {" "}
-                      Careers{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-white-700/75"
-                      href="#"
-                    >
-                      {" "}
-                      History{" "}
-                    </a>
-                  </li>
-
-                  <li>
-                    <a
-                      className="text-gray-700 transition hover:text-white-700/75"
-                      href="#"
-                    >
-                      {" "}
-                      Our Team{" "}
                     </a>
                   </li>
                 </ul>
@@ -141,13 +115,7 @@ const Footer = () => {
                   </li>
 
                   <li>
-                    <a
-                      className="text-gray-700 transition hover:text-white-700/75"
-                      href="#"
-                    >
-                      {" "}
-                      Live Chat{" "}
-                    </a>
+                    <WhatsAppWidget number={phone} message={message} />
                   </li>
                 </ul>
               </div>

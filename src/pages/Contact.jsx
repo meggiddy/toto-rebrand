@@ -5,8 +5,8 @@ import { Link } from "react-router";
 
 export default function ContactBlock() {
   return (
-    <section className="my-8 sm:py-16 lg:my-24 h-full">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+    <section className="my-8 sm:my-16 lg:my-24 h-full">
+      <div className="mx-auto max-w-7xl sm:mx-6 lg:mx-8">
         {/* Header */}
         <div className="relative mx-auto mb-12 w-fit sm:mb-16 lg:mb-24">
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl lg:text-4xl">
@@ -27,13 +27,13 @@ export default function ContactBlock() {
           />
 
           {/* Contact Info Section */}
-          <div>
+          <div className="px-4 sm:px-6 lg:px-8">
             <h3 className="mb-6 text-2xl font-semibold text-gray-900">
               Let us bring the fun!
             </h3>
             <p className="mb-10 text-lg font-medium text-gray-600">
-              We provide the blocks and components you need to build a polished
-              website, landing page, or admin panel — fast.
+              We make all the fun dreams come true. Reach out to us for bookings
+              and inquiries.
             </p>
 
             {/* Contact Info Grid */}

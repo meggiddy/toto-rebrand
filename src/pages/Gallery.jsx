@@ -24,6 +24,16 @@ const Gallery = () => {
       // tiles will be at least 280px wide and grow
       style={{ gridTemplateColumns: "repeat(auto-fill, minmax(280px, 1fr))" }}
     >
+      {/* Header */}
+      <div className="relative mx-auto my-12 w-fit sm:my-16 lg:my-24">
+        <h2 className="text-2xl font-bold text-gray-900 md:text-3xl lg:text-4xl">
+          Gallery
+        </h2>
+        <span
+          aria-hidden="true"
+          className="pointer-events-none absolute left-0 top-9 h-1 w-full rounded-full bg-gradient-to-r from-cyan-500/40 to-cyan-500/5"
+        />
+      </div>
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:gap-6">
         {images.map((img, i) => (
           <figure

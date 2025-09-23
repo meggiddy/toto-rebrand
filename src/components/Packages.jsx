@@ -55,7 +55,16 @@ const Packages = () => {
   return (
     <>
       <div className="flex flex-col items-center justify-center min-h-screen">
-        <p className="text-4xl font-serif">Our Packages</p>
+        {/* Header */}
+        <div className="relative mx-auto my-12 w-fit sm:my-16 lg:my-24">
+          <h2 className="text-2xl font-bold text-gray-900 md:text-3xl lg:text-4xl">
+            Our Services
+          </h2>
+          <span
+            aria-hidden="true"
+            className="pointer-events-none absolute left-0 top-9 h-1 w-full rounded-full bg-gradient-to-r from-cyan-500/40 to-cyan-500/5"
+          />
+        </div>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 p-6">
           <div>
             <ImageCarousel images={poolImages} aspectClass="h-48" />

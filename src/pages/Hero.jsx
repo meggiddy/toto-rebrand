@@ -2,6 +2,11 @@ import bgUrl from "../assets/background.jpg";
 import React from "react";
 
 const Hero = () => {
+  const dial = (num) => {
+    const e164 = `+${num.replace(/\D/g, "")}`;
+    window.location.href = `tel:${e164}`;
+  };
+
   return (
     <div
       className="flex flex-row items-center justify-center min-h-screen bg-cover bg-center"
@@ -17,9 +22,17 @@ const Hero = () => {
         <p className="m-6 text-6xl font-bold text-gray-800 font-serif">
           Welcome to Toto Bouncing Castles
         </p>
-        <div className="m-6 flex flex-row items-center justify-center space-x-4 text-2xl">
-          <span className="icon-[tabler--phone] text-xl" aria-hidden="true" />
-          <p>+254 722 286300</p>
+        <div
+          role="button"
+          tabIndex={0}
+          onClick={() => dial("+254 722 286300")}
+          onKeyDown={(e) =>
+            (e.key === "Enter" || e.key === " ") && dial("+254 722 286300")
+          }
+          className="m-6 flex flex-row items-center justify-center space-x-4 text-2xl hover:text-[#25D366]"
+        >
+          <span className="icon-[tabler--phone] text-2xl" aria-hidden="true" />
+          <p className="font-serif">+254 722 286300</p>
         </div>
       </div>
     </div>

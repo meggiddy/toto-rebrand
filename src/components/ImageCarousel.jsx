@@ -133,7 +133,7 @@ export default function ImageCarousel({
       </button>
 
       {/* Indicators */}
-      <div className="absolute inset-x-0 bottom-3 flex justify-center gap-2">
+      <div className="absolute inset-x-0 bottom-3 flex justify-center gap-2 p-2">
         {images.map((_, i) => (
           <button
             key={i}

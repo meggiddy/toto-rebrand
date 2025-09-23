@@ -67,7 +67,7 @@ export default function Navbar() {
         id="mobile-menu"
         className={`${
           open ? "block" : "hidden"
-        } border-t border-white/10 bg-cyan-800/95 text-white lg:hidden`}
+        } border-t border-white/10 text-white lg:hidden bg-cyan-300`}
       >
         <div className="space-y-1 px-4 py-3">
           <NavLink

@@ -4,6 +4,11 @@ import contactImg from "../assets/location.jpeg";
 import { Link } from "react-router";
 
 export default function ContactBlock() {
+  const dial = (num) => {
+    const e164 = `+${num.replace(/\D/g, "")}`;
+    window.location.href = `tel:${e164}`;
+  };
+
   return (
     <section className="my-8 sm:my-16 lg:my-24 h-full">
       <div className="mx-auto max-w-7xl sm:mx-6 lg:mx-8">
@@ -74,7 +79,16 @@ export default function ContactBlock() {
               </div>
 
               {/* Get in Touch */}
-              <div className="rounded-xl border border-gray-200 p-6 text-center shadow-sm">
+              <div
+                role="button"
+                tabIndex={0}
+                onClick={() => dial("+254 722 286300")}
+                onKeyDown={(e) =>
+                  (e.key === "Enter" || e.key === " ") &&
+                  dial("+254 722 286300")
+                }
+                className="rounded-xl border border-gray-200 p-6 text-center shadow-sm"
+              >
                 <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-cyan-500/30 text-cyan-600">
                   <span
                     className="icon-[tabler--phone] text-xl"

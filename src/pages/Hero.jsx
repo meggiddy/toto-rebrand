@@ -42,7 +42,7 @@ const Hero = () => {
             <div className="mt-6 flex justify-center gap-4 lg:justify-start">
               <a
                 className="text-cyan-300 transition hover:text-white-700"
-                href="#"
+                href="https://m.facebook.com/totobouncingcastle/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -64,7 +64,25 @@ const Hero = () => {
 
               <a
                 className="text-cyan-300 transition hover:text-white-700"
-                href="#"
+                href="https://vm.tiktok.com/ZMHW8KTDWTfJV-n1w3v/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span className="sr-only"> TikTok </span>
+
+                <svg
+                  className="size-5.5"
+                  viewBox="0 0 16 16"
+                  fill="currentColor"
+                  aria-hidden="true"
+                >
+                  <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z" />
+                </svg>
+              </a>
+
+              <a
+                className="text-cyan-300 transition hover:text-white-700"
+                href="https://www.instagram.com/toto_bouncing?igsh=YzljYTk1ODg3Zg=="
                 target="_blank"
                 rel="noreferrer"
               >
@@ -86,11 +104,11 @@ const Hero = () => {
 
               <a
                 className="text-cyan-300 transition hover:text-white-700"
-                href="#"
+                href="https://x.com/toto_castle?t=q0KMNouPld5aMBQFVEu7MA&s=09"
                 target="_blank"
                 rel="noreferrer"
               >
-                <span className="sr-only"> Twitter </span>
+                <span className="sr-only"> X </span>
 
                 <svg
                   className="size-6"

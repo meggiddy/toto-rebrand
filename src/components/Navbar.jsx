@@ -15,7 +15,7 @@ export default function Navbar() {
         </Link>
 
         {/* Desktop links */}
-        <div className="hidden items-center gap-8 text-blue-500 lg:flex">
+        <div className="hidden items-center gap-8 text-blue-600 lg:flex">
           <NavLink to="/gallery" className="hover:text-cyan-200">
             Gallery
           </NavLink>
@@ -34,7 +34,7 @@ export default function Navbar() {
           aria-expanded={open}
           aria-controls="mobile-menu"
           aria-label="Toggle menu"
-          className="inline-flex items-center rounded-md p-2 text-cyan-300 lg:hidden"
+          className="inline-flex items-center rounded-md p-2 text-blue-600 lg:hidden"
         >
           {/* hamburger / X */}
           <svg
@@ -67,7 +67,7 @@ export default function Navbar() {
         id="mobile-menu"
         className={`${
           open ? "block" : "hidden"
-        } border-t border-white/10 text-cyan-300 lg:hidden bg-linear-bl from-cyan-300 to-blue-500 backdrop-blur`}
+        } border-t border-white/10 text-blue-600 lg:hidden bg-linear-bl from-cyan-300 to-blue-500 backdrop-blur`}
       >
         <div className="space-y-1 px-4 py-3">
           <NavLink

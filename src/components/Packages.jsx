@@ -65,7 +65,7 @@ const Packages = () => {
             className="pointer-events-none absolute left-0 top-9 h-1 w-full rounded-full bg-gradient-to-r from-cyan-500/40 to-cyan-500/5"
           />
         </div>
-        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 p-6">
+        <div className="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 p-6 text-center">
           <div>
             <ImageCarousel images={poolImages} aspectClass="h-48" />
             <p>School Fun Days</p>

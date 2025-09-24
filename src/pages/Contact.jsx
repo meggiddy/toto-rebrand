@@ -48,7 +48,7 @@ export default function ContactBlock() {
                 <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-cyan-500/30 text-cyan-600">
                   {/* Iconify (optional) */}
                   <span
-                    className="icon-[tabler--clock] text-xl"
+                    className="icon-[tabler--clock] text-xl text-white"
                     aria-hidden="true"
                   />
                 </div>
@@ -62,7 +62,7 @@ export default function ContactBlock() {
               <div className="rounded-xl border border-gray-200 p-6 text-center shadow-sm hover:bg-linear-to-bl from-cyan-500/15 to-blue-500/15">
                 <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-cyan-500/30 text-cyan-600">
                   <span
-                    className="icon-[tabler--map-pin] text-xl"
+                    className="icon-[tabler--map-pin] text-xl text-white"
                     aria-hidden="true"
                   />
                 </div>
@@ -91,7 +91,7 @@ export default function ContactBlock() {
               >
                 <div className="mx-auto mb-3 flex h-9 w-9 items-center justify-center rounded-full border border-cyan-500/30 text-cyan-600">
                   <span
-                    className="icon-[tabler--phone] text-xl"
+                    className="icon-[tabler--phone] text-xl text-white"
                     aria-hidden="true"
                   />
                 </div>
